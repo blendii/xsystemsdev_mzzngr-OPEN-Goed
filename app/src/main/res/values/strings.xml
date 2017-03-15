@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">OPEN</string>
+
+    <!-- Strings for SplashActivity -->
+    <string name="splash">ULTRA</string>
+
+    <!-- Strings for LoginActivity -->
+    <string name="hint_password">*********</string>
+    <string name="login">LOGIN</string>
+
+    <!-- Strings for SettingsFragment -->
+    <string-array name="status">
+        <item>Available</item>
+        <item>Busy</item>
+        <item>Meeting</item>
+        <item>Out of Office</item>
+    </string-array>
+    <string-array name="auto_lock_times">
+        <item>1</item>
+        <item>3</item>
+        <item>6</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="message_self_destruct_times">
+        <item>1</item>
+        <item>3</item>
+        <item>6</item>
+        <item>12</item>
+        <item>24</item>
+        <item>48</item>
+        <item>72</item>
+        <item>144</item>
+        <item>NEVER</item>
+    </string-array>
+
+    <!--Strings for Camera-->
+    <string name="description_info">Info</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+    <!--Strings for PhotoCameraFragment-->
+    <string name="picture">TAKE PHOTO</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="intro_message">
+        <![CDATA[
+
+
+            This sample demonstrates the basic use of Camera2 API. Check the source code to see how
+            you can display camera preview and take pictures.
+
+
+        ]]>
+    </string>
+
+    <!--Strings for VideoCameraFragment-->
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
+    <string name="permission_request">This sample needs permission for camera and audio recording.</string>
+
+    <!-- Strings for QuickNavigation-->
+    <string name="opened_drawer">openedDrawer</string>
+    <string name="closed_drawer">closedDrawer</string>
+
+    <!-- Strings for DrawerItem-->
+    <string name="description_icon_row">row icon</string>
+    <string name="description_icon_user">user icon</string>
+    <string name="option">Option</string>
+    <string name="name">Name</string>
+    <string name="status_available">Available</string>
+    <string name="status_unavailable">Unavailable</string>
+
+    <!-- Strings for ContactListAdapter-->
+    <string name="description_icon_contact">contact icon</string>
+
+    <!--Strings for ChatActivity-->
+    <string name="hint_input">Type your message…</string>
+    <string name="description_icon_send">contact icon</string>
+
+
+    <!-- Strings for ChatActivity menu-->
+    <string name="title_block_contact">Block contact</string>
+    <string name="title_new_otr_session">New OTR session</string>
+    <string name="title_clear_chat">Clear chat</string>
+    <string name="camera">camera</string>
+
+    <!--Strings for ContactsFragment-->
+    <string name="offline">Offline</string>
+    <string name="hint_add_contact">name@domain</string>
+
+    <!--Strings for ChatsFragment-->
+    <string name="no_chats">Your recent chats appear here</string>
+
+    <!--Strings for NotesFragment-->
+    <string name="no_notes">Your notes appear here</string>
+
+    <!--Strings for SettingsPreference-->
+    <string name="title_category_general">General</string>
+    <string name="title_subject">Subject</string>
+    <string name="summary_subject">Title of the conversation.</string>
+    <string name="title_note">Note</string>
+    <string name="summary_note">Note for your chat.</string>
+    <string name="title_message_destruction_time">Message Destruction Time</string>
+    <string name="summary_message_destruction_time">Time at which all messages will be cleared.</string>
+    <string name="title_category_theme">Theme</string>
+    <string name="title_dark">Dark</string>
+    <string name="summary_dark">Color theme of the application.</string>
+
+    <!--Strings for Standard AlertDialog-->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <!--Strings for Add Contact AlertDialog-->
+    <string name="dialog_title_add_contact">Add contact</string>
+    <string name="dialog_message_add_contact">Enter a contact name:</string>
+
+    <!--Strings for Message Error AlertDialog-->
+    <string name="dialog_title_message_error">Message error</string>
+    <string name="dialog_message_message_error">Message may not have send.</string>
+
+    <!--Strings for Show Private PGP Key AlertDialog-->
+    <string name="dialog_title_private_pgp_key">Private PGP key</string>
+
+    <!--Strings for Show Public PGP Key AlertDialog-->
+    <string name="dialog_title_public_pgp_key">Public PGP key</string>
+
+    <!--Strings for PgpSettingsPreference-->
+    <string name="title_category_pgp">PGP</string>
+    <string name="title_show_private_key">Show private key</string>
+    <string name="summary_show_private_key">Shows private PGP key. Requires password.</string>
+    <string name="title_show_public_key">Show public key</string>
+    <string name="summary_show_public_key">Shows public PGP key. Requires password.</string>
+    <string name="title_import_private_key">Import private PGP key</string>
+    <string name="summary_import_private_key">Imports a private PGP key. Requires password.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

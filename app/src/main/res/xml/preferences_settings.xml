@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/title_category_general">
+
+        <x_systems.x_messenger.preferences.NumberPickerPreference
+            android:title="@string/title_message_destruction_time"
+            android:summary="@string/summary_message_destruction_time"
+            android:key="msgtime"
+            android:defaultValue="10" />
+
+        <x_systems.x_messenger.preferences.NumberPickerPreference
+            android:key="auto_lock"
+            android:defaultValue="10"/>
+
+        <x_systems.x_messenger.preferences.NumberPickerPreference
+            android:key="avatar_id"
+            android:defaultValue="0" />
+            />
+
+        <EditTextPreference
+            android:key="status"
+            android:defaultValue="Available"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/title_category_theme">
+
+        <SwitchPreference
+            android:title="@string/title_dark"
+            android:summary="@string/summary_dark"
+            android:key="theme"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+</PreferenceScreen>

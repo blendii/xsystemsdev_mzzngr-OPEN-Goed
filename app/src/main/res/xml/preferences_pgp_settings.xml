@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/title_category_pgp">
+
+        <Preference
+            android:title="@string/title_show_private_key"
+            android:key="show private key"
+            android:summary="@string/summary_show_private_key"/>
+
+        <Preference
+            android:title="@string/title_show_public_key"
+            android:key="show public key"
+            android:summary="@string/summary_show_public_key" />
+
+        <EditTextPreference
+            android:title="@string/title_import_private_key"
+            android:key="import private key"
+            android:summary="@string/summary_import_private_key" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

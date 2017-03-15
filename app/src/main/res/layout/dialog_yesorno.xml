@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:minHeight="200dp"
+    android:background="#FFF"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/TvMessage"
+            android:textColor="#000" />
+
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/TvMessage"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Yes"
+                android:background="@drawable/my_background_contact"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/BtYes"
+                 />
+
+            <Button
+                android:text="No"
+                android:background="@drawable/my_background_contact"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_height="30dp"
+                android:id="@+id/BtNo"
+                 />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

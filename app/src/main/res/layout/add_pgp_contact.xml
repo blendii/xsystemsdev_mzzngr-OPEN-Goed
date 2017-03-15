@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="5dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:ems="10"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_below="@+id/TvTitle"
+            android:background="@drawable/my_background_contact"
+            android:layout_centerHorizontal="true"
+            android:hint="Example@pgp-ultra.com"
+            android:id="@+id/EtJID" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:hint="PGP KEYID"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/EtJID"
+            android:layout_marginTop="5dp"
+            android:id="@+id/relativeLayout">
+
+            <Button
+                android:id="@+id/scan_qr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_background_contact"
+                android:textColor="#FFFFFF"
+                android:text="SCAN QR"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:text=""
+                android:ems="10"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/my_background_contact"
+                android:hint="PGP KEYID"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/EtKeyId"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/scan_qr"/>
+        </RelativeLayout>
+
+
+        <Button
+            android:text="ADD CONTACT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout"
+            android:background="@drawable/my_background_contact"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/BtContactAdd" />
+
+        <Button
+            android:text="CANCEL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BtContactAdd"
+            android:background="@drawable/my_background_contact"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/BtCancel"  />
+
+        <TextView
+            android:text="Add a new PgpContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:textSize="25sp"
+            android:id="@+id/TvTitle"
+            android:textColor="#000" />
+    </RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C1CFD3</color>
+    <color name="colorPrimaryDark">#336699</color>
+    <color name="colorAccent">#336699</color>
+    <color name="colorPhoto">#ADADAD</color>
+    <color name="colorSecondary">#92B1CD</color>
+    <color name="colorChat">#f4f7f9</color>
+    <color name="colorSender">#747679</color>
+    <color name="colorUser">#4D4E53</color>
+    <color name="colorSave">#D2DEE5</color>
+    <color name="colorNote">#1E1E1E</color>
+
+    <color name="white">#ffffff</color>
+</resources>

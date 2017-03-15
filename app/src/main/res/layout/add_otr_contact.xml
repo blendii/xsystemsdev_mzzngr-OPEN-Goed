@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+        <TextView
+            android:text="Add Otr Contact"
+            android:textSize="20sp"
+            android:id="@+id/TvAddOtrContact"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="#000" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:hint="example@otr-ultra.com"
+            android:layout_below="@+id/TvAddOtrContact"
+            android:background="@drawable/my_background_contact"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:ems="10"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/EtOtrJid" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/EtOtrJid"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Add Contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText"
+                android:layout_weight="3"
+                android:enabled="true"
+                android:layout_alignStart="@+id/editText"
+                android:background="@drawable/my_background_contact"
+                android:textColor="#fff"
+                android:id="@+id/BtOtrAdd" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="Cancel"
+                android:layout_weight="3"
+                android:background="@drawable/my_background_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button2"
+                android:layout_alignEnd="@+id/editText"
+                android:textColor="#fff"
+                android:id="@+id/BtOtrCancel" />
+        </LinearLayout>
+    </RelativeLayout>

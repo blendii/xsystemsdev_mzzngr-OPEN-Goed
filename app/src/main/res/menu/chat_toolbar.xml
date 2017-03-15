@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="schemas.android.com/tools"
+    tools:context="com.example.manasseh.connection.activities.BaseActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/block_contact"
+        android:title="@string/title_block_contact"/>
+    <item
+        android:id="@+id/new_otr_session"
+        android:title="@string/title_new_otr_session"/>
+    <item
+        android:id="@+id/clear_chat"
+        android:title="@string/title_clear_chat"/>
+    <item
+        android:id="@+id/camera"
+        android:icon="@drawable/ic_camera"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="10"
+        android:title="@string/camera" />
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragments.ContactsFragment">
+
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REMOVE CONTACT"
+        android:id="@+id/delete"
+        android:background="@color/colorSecondary"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentEnd="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginEnd="10dp" />-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listContacts"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/NewOtrContact"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="NEW PGP CONTACT"
+        android:textAlignment="center"
+        android:id="@+id/NewPgpContact"
+        android:background="@drawable/my_background_open"
+        android:textColor="#fff"
+        android:onClick="onClick_AddContact"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:drawableLeft="@drawable/ic_contactpluspgp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="NEW OTR CONTACT"
+        android:textAlignment="center"
+        android:id="@+id/NewOtrContact"
+        android:background="@drawable/my_background_open"
+        android:textColor="#fff"
+        android:onClick="onClick_AddContact"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:drawableLeft="@drawable/ic_contactplusotr"
+        android:layout_above="@+id/NewPgpContact"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

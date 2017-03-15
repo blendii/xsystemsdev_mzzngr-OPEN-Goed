@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:paddingTop="0dp"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-260dp"
+        android:background="@drawable/logo_messenger"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/containerLoader"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/loader"
+                android:background="@drawable/loader_base12" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:background="#E0E6E6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:typeface="sans"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="end"
+                android:textColor="#ACC0C7"
+                android:padding="1dp"
+                android:clickable="true"
+                android:minHeight="35dp"
+                android:textSize="18sp"
+                android:onClick="onClick_Cancel" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout2"
+            android:visibility="visible"
+            android:layout_below="@+id/containerLoader"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginEnd="13dp">
+
+            <TextView
+                android:id="@+id/error_message"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF0000"
+                android:typeface="sans"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:gravity="center"
+                android:text="Password incorrect.\n Please wait 30 seconds."/>
+
+            <EditText
+                android:layout_marginTop="8dp"
+                android:id="@+id/Password"
+                android:background="@drawable/my_background_contact"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/hint_password"
+                android:padding="4dp" />
+
+            <Button
+                android:id="@+id/Login"
+                android:background="@drawable/my_background_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:typeface="sans"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="end"
+                android:textColor="#ffffff"
+                android:padding="1dp"
+                android:clickable="true"
+                android:minHeight="35dp"
+                android:textSize="18sp"
+                android:onClick="onClick_Login" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

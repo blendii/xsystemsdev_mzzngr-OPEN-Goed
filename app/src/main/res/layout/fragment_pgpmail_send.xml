@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="x_systems.x_messenger.fragments.pgpmail_send">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:hint="Your message..."
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/BtSendPgp"
+        android:gravity="top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/TvPgpMessage"
+        android:background="#d7d6d4"
+        android:textColorHighlight="#000"
+        android:textColorLink="#000"
+        android:textColorHint="#000" />
+
+    <Button
+        android:text="Send Message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/my_button_login"
+        android:textColor="#FFF"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/BtSendPgp" />
+</RelativeLayout>

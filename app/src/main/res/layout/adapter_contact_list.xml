@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@drawable/my_background_open">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="10dp">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/contactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@android:color/background_light"
+                android:text="CONTACT NAME" />
+
+            <TextView
+                android:text="JID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/background_light"
+                android:layout_centerVertical="true"
+                android:layout_below="@id/contactName"
+                android:id="@+id/TvJid"
+               />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

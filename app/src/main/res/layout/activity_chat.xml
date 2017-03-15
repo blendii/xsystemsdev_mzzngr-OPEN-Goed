@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.BaseActivity"
+    android:background="@android:color/white">
+
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:inputType="textCapSentences|textAutoCorrect"
+        android:lines="20"
+        android:gravity="top|start"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:textAlignment="inherit"
+        android:padding="8dp"
+        android:textColor="@color/colorUser"
+        android:layout_alignParentBottom="true"
+        android:background="#d7d6d4"
+        android:imeOptions="actionSend"/>
+
+    <Button
+
+        android:text="MESSAGES ARE PGP OR OTR ENCRYPTED"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_above="@id/input"
+        android:id="@+id/button_smilies"
+        android:textColor="@color/white"
+        android:background="@drawable/my_chat_button" />
+
+
+    <ListView
+        android:id="@+id/listMessages"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/button_smilies"
+        android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" />
+
+</RelativeLayout>

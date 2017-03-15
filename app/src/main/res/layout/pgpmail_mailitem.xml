@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="10dp"
+    android:background="@drawable/pgpmailitemback"
+    android:weightSum="1"
+    android:layout_marginBottom="5dp">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/ic_mail4"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/imageView2" />
+
+    <TextView
+        android:text="Message"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:id="@+id/MailFrom" />
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="25dp"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+
+        app:srcCompat="@drawable/ic_lock"
+        android:id="@+id/security"
+
+         />
+    </RelativeLayout>
+
+
+</LinearLayout>
