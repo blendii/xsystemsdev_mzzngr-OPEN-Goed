@@ -39,7 +39,7 @@
             android:name=".services.ConnectionService"
             android:enabled="true"
             android:label="NotificationService" />
-
+        <!--nothing-->
         <activity
             android:name=".activities.SplashActivity"
             android:label="@string/app_name"
